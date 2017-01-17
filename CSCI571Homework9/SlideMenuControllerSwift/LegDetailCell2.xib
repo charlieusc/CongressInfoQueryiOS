@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LegDetailCell2" customModule="SlideMenuControllerSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKY-zq-AnV">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="123" id="wtC-4h-IgH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B73-tn-hrn">
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="DetailButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iNL-rh-T5K"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="B73-tn-hrn" firstAttribute="leading" secondItem="ZKY-zq-AnV" secondAttribute="trailing" constant="6" id="2mw-xG-fB3"/>
+                    <constraint firstItem="ZKY-zq-AnV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="IJr-61-Rvx"/>
+                    <constraint firstItem="ZKY-zq-AnV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Z00-tn-R9E"/>
+                    <constraint firstItem="B73-tn-hrn" firstAttribute="baseline" secondItem="ZKY-zq-AnV" secondAttribute="baseline" id="fzG-s4-oaO"/>
+                    <constraint firstItem="ZKY-zq-AnV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iy5-tp-Qol"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="B73-tn-hrn" secondAttribute="trailing" constant="50" id="kSN-Ac-6yQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DetailButton" destination="B73-tn-hrn" id="kDx-xo-HaQ"/>
+                <outlet property="TitleLabel" destination="ZKY-zq-AnV" id="Ihv-Vr-6i2"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

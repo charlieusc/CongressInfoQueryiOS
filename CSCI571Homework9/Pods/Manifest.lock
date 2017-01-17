@@ -1,0 +1,45 @@
+PODS:
+  - Alamofire (4.2.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SwiftSpinner (1.1.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `master`)
+  - SDWebImage (~> 3.8)
+  - SwiftSpinner (from `https://github.com/icanzilb/SwiftSpinner.git`, branch `master`)
+  - SwiftyJSON (from `https://github.com/BaiduHiDeviOS/SwiftyJSON.git`, branch `swift3`)
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :branch: master
+    :git: https://github.com/Alamofire/Alamofire.git
+  SwiftSpinner:
+    :branch: master
+    :git: https://github.com/icanzilb/SwiftSpinner.git
+  SwiftyJSON:
+    :branch: swift3
+    :git: https://github.com/BaiduHiDeviOS/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 7a17b1d4b558a172d571a9d2b1cd81e190586027
+    :git: https://github.com/Alamofire/Alamofire.git
+  SwiftSpinner:
+    :commit: e3fd9eb939dae49a9be6a6e644546db4b0be4816
+    :git: https://github.com/icanzilb/SwiftSpinner.git
+  SwiftyJSON:
+    :commit: de5dc3b1b421805769590d331178551bbb0e5733
+    :git: https://github.com/BaiduHiDeviOS/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 26d8877ec03b4e6e6cbfbf7c03924b4844a2d453
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SwiftSpinner: 1e4cdf56f87820adb68e2bd83dc2b815e347a882
+  SwiftyJSON: 6118fb49d7519c4d31a0c1f3d5af936e9047b556
+
+PODFILE CHECKSUM: ea454edf58039213404df08da3b2be58b63e65f4
+
+COCOAPODS: 1.2.0.beta.1

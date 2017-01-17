@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LegDetailCell" customModule="SlideMenuControllerSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8S-vi-Fnb">
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryW-pm-0Zm">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="117" id="8ZS-el-Pon"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ryW-pm-0Zm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="0Bw-YM-k04"/>
+                    <constraint firstItem="ryW-pm-0Zm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="53I-0C-oLe"/>
+                    <constraint firstItem="ryW-pm-0Zm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="L5G-Ok-501"/>
+                    <constraint firstItem="c8S-vi-Fnb" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="dBc-aC-e46"/>
+                    <constraint firstItem="c8S-vi-Fnb" firstAttribute="leading" secondItem="ryW-pm-0Zm" secondAttribute="trailing" constant="14" id="frX-ie-dD6"/>
+                    <constraint firstItem="ryW-pm-0Zm" firstAttribute="firstBaseline" secondItem="c8S-vi-Fnb" secondAttribute="firstBaseline" id="g9U-iP-MCH"/>
+                    <constraint firstItem="ryW-pm-0Zm" firstAttribute="baseline" secondItem="c8S-vi-Fnb" secondAttribute="baseline" id="qx5-x5-7SP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DetailLabel" destination="c8S-vi-Fnb" id="GOx-DF-jMZ"/>
+                <outlet property="TitleLabel" destination="ryW-pm-0Zm" id="vCm-hY-If5"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
